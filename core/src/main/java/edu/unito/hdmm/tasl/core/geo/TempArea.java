@@ -1,5 +1,6 @@
 package edu.unito.hdmm.tasl.core.geo;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 import com.vividsolutions.jts.geom.Polygon;
@@ -10,12 +11,12 @@ public class TempArea {
 	
 	private Polygon polygon;
 	
-	private Date timestamp;
+	private Timestamp timestamp;
 	
 	
 	
 	
-	public TempArea(Polygon polygon, Date timestamp) {
+	public TempArea(Polygon polygon, Timestamp timestamp) {
 		super();
 		this.polygon = polygon;
 		this.timestamp = timestamp;
@@ -33,7 +34,7 @@ public class TempArea {
 
 
 
-	public Date getTimestamp() {
+	public Timestamp getTimestamp() {
 		return timestamp;
 	}
 	

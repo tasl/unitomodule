@@ -5,10 +5,11 @@ import edu.unito.hdmm.tasl.core.geo.TempPoint;
 public class Person {
 
 	
-	private TASLObject id;
 	
 	private TempPoint tempPoint;
 	
+	
+	private TASLObject taslObject;
 	
 	
 	private String name;
@@ -18,13 +19,13 @@ public class Person {
 	public Person(TASLObject id) {
 		super();
 		
-		this.id = id;
+		this.taslObject = id;
 	}
 
 	
 	public Person( TASLObject id, TempPoint tempPoint) {
 		super();
-		this.id = id;
+		this.taslObject = id;
 		this.tempPoint = tempPoint;
 	}
 
@@ -50,12 +51,19 @@ public class Person {
 		this.surname = surname;
 	}
 
-	
 
-	public TASLObject getId() {
-		return id;
+	public TASLObject getTaslObject() {
+		return taslObject;
 	}
 
+
+	public void setTaslObject(TASLObject taslObject) {
+		this.taslObject = taslObject;
+	}
+
+	
+
+	
    
 	
 	

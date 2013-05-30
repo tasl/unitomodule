@@ -1,6 +1,7 @@
 package edu.unito.hdmm.tasl.core.geo;
 
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 import com.vividsolutions.jts.geom.Geometry;
@@ -13,10 +14,10 @@ public class TempPoint {
 	
 	private Point p;
 	
-	private Date timestamp;
+	private Timestamp timestamp;
 
 	
-	public TempPoint(Point p, Date timestamp) {
+	public TempPoint(Point p, Timestamp timestamp) {
 		super();
 		this.p = p;
 		this.timestamp = timestamp;
@@ -42,7 +43,7 @@ public class TempPoint {
 	 }
 
 
-	public Date getTimestamp() {
+	public Timestamp getTimestamp() {
 		return timestamp;
 	}
 	
