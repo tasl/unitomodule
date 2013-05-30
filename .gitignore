@@ -13,7 +13,7 @@
 *.png
 *.fig
 *.dat
-
+*.gif
 *.classpath
 *.project
 
