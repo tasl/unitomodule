@@ -25,8 +25,16 @@ public class DAOPerson {
 
 			
 			
+			
+			String insertString="insert into   values (?,?,?,?);";
+			
+			
+			
 				stat= connection
 						.prepareStatement(insertString);
+			
+			
+			
 
 					
 				Logger.logFine("insert : "+stat.toString());
