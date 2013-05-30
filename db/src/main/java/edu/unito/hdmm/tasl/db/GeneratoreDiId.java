@@ -1,8 +1,10 @@
-package it.unina.aci.persistenza;
+package edu.unito.hdmm.tasl.db;
 
-import it.unina.utilita.Logger;
+
 
 import java.sql.*;
+
+import edu.unito.hdmm.tasl.utility.Logger;
 
 public class GeneratoreDiId {
     
