@@ -29,9 +29,9 @@ SELECT AddGeometryColumn('context', 'person_location','geom', 4326, 'POINT',2);
 SELECT AddGeometryColumn('context', 'sensor_location','geom', 4326, 'POINT',2);
 SELECT AddGeometryColumn('context', 'tool_location','geom', 4326, 'POINT',2);
 
-create index idx_geom  on context.person_location using gist(geom);
-create index idx_geom  on context.sensor_location using gist(geom);
-create index idx_geom  on context.tool_location using gist(geom);
+create index idx_geom_person_location  on context.person_location using gist(geom);
+create index idx_geom_sensor_location  on context.sensor_location using gist(geom);
+create index idx_geom_tool_location  on context.tool_location using gist(geom);
 
 
 ALTER TABLE  context.polygon_status ADD FOREIGN KEY (id ) REFERENCES context.polygon(id);
